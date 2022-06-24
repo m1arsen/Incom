@@ -1,0 +1,72 @@
+.benefits {
+  padding: 80px 0 120px;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1224px;
+      height: 1224px;
+      z-index: -1;
+      background: url('./../../img/benefits/design-element.svg') center no-repeat;
+      background-size: cover;
+      transform: translate(50%, -20%);
+
+      }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 1224px;
+      height: 1224px;
+      z-index: -1;
+      background: url('./../../img/benefits/design-element.svg') center no-repeat;
+      background-size: cover;
+      transform: translate(-50%, 45%);
+
+      }
+  }
+
+
+
+  &__heading {
+    max-width: 694px;
+    margin: 0 auto 51px;
+
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: $black;
+
+    span {
+      color: $accent-color;
+    }
+  }
+
+  &-card {
+    margin-bottom: 74px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_even .card__info{
+      order: 1;
+    }
+
+    &_even .card__num{
+      padding-left: 58%;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,105 @@
+.menu {
+  padding: 55px 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  transition: .3s ease-in;
+  opacity: 0;
+
+  background-color: #fff;
+  z-index: -1;
+
+  &.open {
+    opacity: 1;
+    z-index: 5;
+  }
+
+  .container {
+    color: $black;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    h1 {
+      color: $black;
+    }
+  }
+
+  &__slogan {
+    max-width: 286px;
+    font-size: 18px;
+    font-weight: 500;
+    color: $black;
+  }
+
+  &__number {
+    font-size: 24px;
+    font-weight: 700;
+    color: $black;
+    transition: color .2s ease-in;
+
+    &:hover {
+      color: $accent-color-hover;
+    }
+  }
+
+  &__btn {
+    padding: 15px 25px;
+
+    border: 2px solid $accent-color;
+    border-radius: 5px;
+    background: none;
+    transition: background-color .2s ease-in, color .2s ease-in, border-color .2s ease-in;
+
+    font-size: 14px;
+    color: $accent-color;
+    font-family: 'MuseoSansCyrl', sans-serif;
+    font-weight: 700;
+
+    &:hover {
+      background-color: $accent-color;
+      color: #fff;
+      border-color: $accent-color;
+    }
+  }
+
+  &__nav {
+
+  }
+}
+
+.links-container {
+  padding: 200px 50px 250px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+
+    li {
+      width: 33.3%;
+
+      font-weight: 700;
+      font-size: 32px;
+
+      a {
+        transition: color .2s ease-in;
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+

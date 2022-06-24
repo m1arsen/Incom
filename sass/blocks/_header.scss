@@ -1,0 +1,48 @@
+.header {
+  margin-bottom: 180px;
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  &__slogan {
+    max-width: 286px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__number {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    transition: color .2s ease-in;
+
+    &:hover {
+      color: $accent-color-hover;
+    }
+  }
+
+  &__btn {
+    padding: 15px 25px;
+
+    border: 2px solid $accent-color;
+    border-radius: 5px;
+    background: none;
+    filter: drop-shadow(0px 0px 30px #FFC256);
+    transition: background-color .2s ease-in, color .2s ease-in, border-color .2s ease-in;
+
+    font-size: 14px;
+    color: $accent-color;
+    font-family: 'MuseoSansCyrl', sans-serif;
+    font-weight: 700;
+
+    &:hover {
+      background-color: rgba($accent-color, .2);
+      color: $accent-color-hover;
+      border-color: $accent-color-hover;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.main {
+  padding: 55px 0 145px;
+  height: 100vh;
+
+  background: url('./../img/main/main-bg.jpg') center no-repeat;
+  background-size: cover;
+
+  &__wrapper {
+    max-width: 1175px;
+    padding-right: 15px;
+  }
+
+  &__title-row {
+    margin-bottom: 156px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__heading {
+    max-width: 630px;
+  }
+  &__title {
+    margin-bottom: 83px;
+    font-size: 37px;
+    line-height: 43px;
+    font-weight: 900;
+
+    span {
+      color: $accent-color;
+    }
+  }
+  &__btn {
+    padding: 30px 45px;
+
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+
+    display: inline-block;
+
+    background-color: $accent-color;
+    box-shadow: 0px 0px 60px rgba(255, 194, 86, 0.5);
+    border-radius: 5px;
+    position: relative;
+    transition: all .2s ease-in;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -7px;
+      width: 364px;
+      height: 90px;
+      border: 1px solid $accent-color;
+      border-radius: 5px;
+      transition: .2s ease-in;
+    }
+
+    &:hover.main__btn {
+      transform: scale(1.025);
+      background-color: $accent-color-hover;
+    }
+
+    &:hover.main__btn:after{
+      opacity: 0;
+      transform: scale(.85);
+    }
+
+  }
+
+  &__benefits {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__benefit-container {
+    max-width: 310px;
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+  }
+
+  &__benefit-element {
+    img {
+      border-radius: 50%;
+      box-shadow: 0px 0px 15px #CFA55B;
+    }
+  }
+
+
+}
+

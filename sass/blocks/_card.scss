@@ -1,0 +1,60 @@
+.card {
+  &__num {
+    margin-bottom: 24px;
+
+    font-family: 'Roboto';
+    color: $accent-color;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 1;
+    text-transform: uppercase;
+    opacity: .3;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  &__info {
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__benefit {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+
+    span {
+      color: $accent-color;
+      font-weight: 900;
+    }
+
+    p {
+      max-width: 360px;
+    }
+
+  }
+
+  &__img {
+    max-width: 649px;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 5px 50px rgba(60, 60, 60, 0.4);
+
+    }
+  }
+}

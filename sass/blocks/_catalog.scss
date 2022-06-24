@@ -1,0 +1,139 @@
+.catalog {
+  padding: 90px 0;
+
+  background: url('./../img/benefits/design-element.svg') center no-repeat;
+  background-size: 70%;
+
+  color: $black;
+
+  &__title {
+    margin-bottom: 57px;
+
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: $black;
+
+    span {
+      color: $accent-color;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 38px;
+  }
+
+  &__btn {
+    padding: 23px 42px;
+
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 900;
+    color: $accent-color;
+
+    border: 2px solid $accent-color;
+    border-radius: 5px;
+    transition: .2s ease-in;
+
+    &:hover {
+      color: #fff;
+      background-color: $accent-color;
+    }
+
+    &.active {
+      color: #fff;
+      background-color: $accent-color;
+      box-shadow: 0px 20px 40px rgba(207, 165, 91, 0.4);
+    }
+
+  }
+
+  &__slider {
+
+    &-tab {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+    }
+  }
+  &__card {
+    width: 1100px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+  &__card-img {
+    max-width: 1100px;
+    margin: 0 auto 32px;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  &__card-about {
+    text-align: center;
+    margin-bottom: 47px;
+
+    h2 {
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 36px;
+      line-height: 1;
+      color: $accent-color;
+    }
+
+    p {
+      color: $black;
+      font-weight: 700;
+      line-height: 22px;
+    }
+
+  }
+  &__card-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+  }
+  &__card-info-item {
+
+    h3 {
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      color: $accent-color;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 500;
+      color: #8c8c8c;
+    }
+  }
+
+}
+
+
+.swiper-button {
+
+  &-prev:after {
+    color: $accent-color;
+    font-weight: 900;
+  }
+
+  &-next:after {
+    color: $accent-color;
+    font-weight: 900;
+  }
+
+}

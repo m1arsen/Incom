@@ -1,0 +1,44 @@
+.questions {
+  padding: 100px 0 105px;
+  background: url('./../img/questions/questions-bg.jpg') center no-repeat;
+  background-size: cover;
+
+  form {
+    display: flex;
+    column-gap: 27px;
+  }
+
+  input {
+    padding: 25px 40px;
+    max-width: 553px;
+    width: 100%;
+
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 20px rgba(66, 66, 66, 0.3);
+
+    &::placeholder {
+      color: $black;
+      font-weight: 300;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 900;
+  }
+
+  p {
+    margin-bottom: 44px;
+
+    max-width: 715px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+}
+
+
+

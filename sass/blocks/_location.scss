@@ -1,0 +1,12 @@
+.location {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+
+  &__adress {
+    max-width: 203px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+}
