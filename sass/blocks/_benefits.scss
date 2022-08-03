@@ -42,7 +42,7 @@
 
     font-weight: 900;
     font-size: 36px;
-    line-height: 43px;
+    line-height: 1.15;
     text-align: center;
     color: $black;
 
@@ -63,10 +63,33 @@
     }
 
     &_even .card__num{
-      padding-left: 58%;
+      max-width: 542px;
+      margin-left: 58%;
     }
   }
 }
 
+@media(max-width: 1260px) {
 
+  .benefits {
+
+    padding:  calc(40px + (80 - 40) * (100vw - 320px) / (1260 - 320))
+              0
+              calc(60px + (120 - 60) * (100vw - 320px) / (1260 - 320));
+
+    &__heading {
+      font-size: calc(20px + (36 - 20) * (100vw - 320px) / (1260 - 320));
+      max-width: calc(290px + (694 - 290) * (100vw - 320px) / (1260 - 320));
+    }
+
+    &-card {
+      &_even .card__num{
+        margin: 0 auto;
+        max-width: 649px
+      }
+    }
+
+  }
+
+}
 

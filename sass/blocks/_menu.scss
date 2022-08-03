@@ -24,6 +24,7 @@
   &__container {
     display: flex;
     align-items: center;
+    column-gap: 20px;
     justify-content: space-between;
   }
 
@@ -82,13 +83,14 @@
   ul {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 30px;
+    gap: 30px;
 
     li {
-      width: 33.3%;
+      width: 30%;
 
       font-weight: 700;
       font-size: 32px;
+      line-height: 0.8;
 
       a {
         transition: color .2s ease-in;
@@ -100,6 +102,81 @@
   }
 }
 
+@media(max-width: 1350px) {
+  .menu {
+    padding-top: calc(20px + (55 - 20) * (100vw - 320px) / (1350 - 320));
+    padding-bottom: calc(20px + (55 - 20) * (100vw - 320px) / (1350 - 320));
+  }
+}
+
+@media(max-width: 1100px) {
+
+  .menu {
+
+    &__slogan {
+      display: none;
+    }
+
+    &__number {
+      font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1100 - 320));
+    }
+
+    &__btn {
+      padding: 15px 20px;
+    }
+
+  }
+
+  .links-container {
+    padding:  calc(50px + (200 - 50) * (100vw - 320px) / (1100 - 320))
+              calc(0px + (50 - 0) * (100vw - 320px) / (1100 - 320))
+              calc(70px + (250 - 70) * (100vw - 320px) / (1100 - 320));
+
+    & ul {
+      row-gap: calc(10px + (30 - 10) * (100vw - 320px) / (1100 - 320));
+
+      & li {
+        font-size: calc(18px + (32 - 18) * (100vw - 320px) / (1100 - 320));
+      }
+    }
 
 
+  }
+
+}
+
+@media(max-width: 770px) {
+
+  .menu {
+
+    &__number {
+      display: none;
+    }
+
+    &__btn {
+      padding: 10px 15px;
+    }
+  }
+
+  .links-container ul {
+    flex-direction: column;
+
+    & li {
+      width: 100%;
+    }
+  }
+
+}
+
+@media(max-width: 500px) {
+
+  .menu {
+
+    &__btn {
+      display: none;
+    }
+
+  }
+
+}
 

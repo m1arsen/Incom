@@ -28,7 +28,7 @@
 
     font-weight: 900;
     font-size: 36px;
-    line-height: 43px;
+    line-height: 1.19;
 
     span {
       color: $accent-color;
@@ -107,4 +107,51 @@
       }
     }
   }
+}
+
+@media(max-width: 1100px) {
+
+  .information {
+
+    padding: calc(40px + (80 - 40) * (100vw - 320px) / (1260 - 320)) 0;
+
+    &__title {
+      font-size: calc(20px + (36 - 20) * (100vw - 320px) / (1100 - 320));
+      margin-bottom: calc(15px + (53 - 15) * (100vw - 320px) / (1100 - 320));
+    }
+
+    &__heading {
+      & p, p:first-of-type {
+        margin-bottom: calc(10px + (29 - 10) * (100vw - 320px) / (1100 - 320));
+      }
+    }
+
+    &__card {
+
+      &-title {
+        font-size: calc(18px + (24 - 18) * (100vw - 320px) / (1100 - 320));
+        margin-bottom: calc(10px + (23 - 10) * (100vw - 320px) / (1100 - 320));
+      }
+
+      &-subtitle {
+        margin-bottom: calc(20px + (37 - 20) * (100vw - 320px) / (1100 - 320));
+      }
+
+      &-front {
+        padding:  calc(28px + (36 - 28) * (100vw - 320px) / (1100 - 320))
+                  calc(21px + (34 - 21) * (100vw - 320px) / (1100 - 320))
+                  calc(27px + (43 - 27) * (100vw - 320px) / (1100 - 320));
+      }
+
+    }
+
+    &__benefits li {
+      margin-bottom: calc(10px + (25 - 10) * (100vw - 320px) / (1100 - 320));
+
+      &:last-child {
+        margin-bottom: calc(20px + (54 - 20) * (100vw - 320px) / (1100 - 320));
+      }
+    }
+  }
+
 }

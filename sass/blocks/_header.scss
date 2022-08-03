@@ -1,10 +1,11 @@
 .header {
   margin-bottom: 180px;
-  
+
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 20px;
 
   position: relative;
 
@@ -12,6 +13,7 @@
     max-width: 286px;
     font-size: 18px;
     font-weight: 500;
+    line-height: 1;
   }
 
   &__number {
@@ -45,4 +47,50 @@
       border-color: $accent-color-hover;
     }
   }
+}
+
+@media(max-width: 1100px) {
+
+  .header {
+    margin-bottom: calc(50px + (180 - 50) * (100vw - 320px) / (1100 - 320));
+
+    &__slogan {
+      display: none;
+    }
+
+    &__number {
+      font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1100 - 320));
+    }
+
+    &__btn {
+      padding: 15px 20px;
+    }
+
+  }
+
+}
+
+@media(max-width: 770px) {
+
+  .header {
+
+    &__number {
+      display: none;
+    }
+
+    &__btn {
+      padding: 10px 15px;
+    }
+  }
+
+}
+
+@media(max-width: 500px) {
+
+  .header {
+    &__btn {
+      display: none;
+    }
+  }
+
 }

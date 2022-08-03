@@ -79,3 +79,23 @@ body {
 .none {
   display: none;
 }
+
+@media(max-width: 500px) {
+
+  .card__info .btn {
+    padding:  calc(20px + (30 - 20) * (100vw - 320px) / (500 - 320))
+              calc(33px + (66 - 33) * (100vw - 320px) / (500 - 320));
+    font-size: calc(14px + (18 - 14) * (100vw - 320px) / (500 - 320));
+    max-width: calc(290px + (420 - 290) * (100vw - 320px) / (500 - 320));
+    margin: 0 auto;
+  }
+
+}
+
+@media(max-width: 550px) {
+
+  .form-btn {
+    font-size: 14px;
+  }
+
+}

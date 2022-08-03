@@ -1,4 +1,5 @@
 .card {
+
   &__num {
     margin-bottom: 24px;
 
@@ -9,11 +10,15 @@
     line-height: 1;
     text-transform: uppercase;
     opacity: .3;
+
+    max-width: 649px;
   }
 
   &__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 30px;
   }
 
 
@@ -57,4 +62,31 @@
 
     }
   }
+}
+
+@media(max-width: 1260px) {
+
+  .card {
+
+    &__container {
+      flex-direction: column;
+      row-gap: 30px ;
+      align-items: center;
+    }
+
+    &__info {
+      order: 1;
+      row-gap: 20px;
+    }
+
+    &__num {
+      font-size: calc(50px + (96 - 50) * (100vw - 320px) / (1100 - 320));
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: calc(20px + (30 - 20) * (100vw - 320px) / (1100 - 320));
+    }
+  }
+
 }

@@ -1,5 +1,5 @@
 .questions {
-  padding: 100px 0 105px;
+  padding: 100px 0;
   background: url('./../img/questions/questions-bg.jpg') center no-repeat;
   background-size: cover;
 
@@ -17,9 +17,14 @@
     border: none;
     box-shadow: 0px 4px 20px rgba(66, 66, 66, 0.3);
 
+    font-size: 20px;
+    font-weight: 500;
+
     &::placeholder {
       color: $black;
-      font-weight: 300;
+      font-family: 'MuseoSansCyrl', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
     }
   }
 
@@ -27,7 +32,7 @@
     margin-bottom: 30px;
 
     font-size: 36px;
-    line-height: 43px;
+    line-height: 1.2;
     font-weight: 900;
   }
 
@@ -36,8 +41,50 @@
 
     max-width: 715px;
     font-weight: 700;
-    line-height: 22px;
+    line-height: 1.375;
   }
+}
+
+@media(max-width: 1100px) {
+
+  .questions {
+    padding: calc(40px + (100 - 40) * (100vw - 320px) / (1100 - 320)) 0;
+
+    &__title {
+      font-size: calc(20px + (36 - 20) * (100vw - 320px) / (1100 - 320));
+      margin-bottom: calc(10px + (30 - 10) * (100vw - 320px) / (1100 - 320));
+    }
+
+    & p {
+      font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1100 - 320));
+      margin-bottom: calc(10px + (44 - 10) * (100vw - 320px) / (1100 - 320));
+    }
+
+  }
+
+}
+
+@media(max-width: 550px) {
+
+  .questions {
+
+    & input {
+      max-width: 273px;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+
+    & form {
+      flex-wrap: wrap;
+      row-gap: 15px;
+    }
+
+  }
+
+
+
 }
 
 
