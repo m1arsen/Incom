@@ -6,7 +6,7 @@
     height: 18.5px;
     position: relative;
     transform: rotate(0deg);
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
 
     span {
@@ -19,7 +19,7 @@
       opacity: 1;
       left: 0;
       transform: rotate(0deg);
-      transition: .3s ease-in;
+      transition: 0.3s ease-in;
 
       &:nth-child(1) {
         transform-origin: left center;
@@ -35,7 +35,6 @@
         transform-origin: left center;
         top: 18.5px;
       }
-
     }
 
     &.open span {
@@ -58,13 +57,5 @@
       top: 20.5px;
       left: 5px;
     }
-
-
-
   }
-
-
-
 }
-
-

@@ -43,10 +43,10 @@
     box-shadow: 0px 0px 60px rgba(255, 194, 86, 0.5);
     border-radius: 5px;
     position: relative;
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: -7px;
       left: -7px;
@@ -54,7 +54,7 @@
       height: 90px;
       border: 1px solid $accent-color;
       border-radius: 5px;
-      transition: .2s ease-in;
+      transition: 0.2s ease-in;
     }
 
     &:hover.main__btn {
@@ -62,11 +62,10 @@
       background-color: $accent-color-hover;
     }
 
-    &:hover.main__btn:after{
+    &:hover.main__btn:after {
       opacity: 0;
-      transform: scale(.85);
+      transform: scale(0.85);
     }
-
   }
 
   &__benefits {
@@ -85,26 +84,20 @@
   &__benefit-element {
     img {
       border-radius: 50%;
-      box-shadow: 0px 0px 15px #CFA55B;
+      box-shadow: 0px 0px 15px #cfa55b;
     }
   }
-
-
 }
 
-@media(max-width: 1350px) {
-
+@media (max-width: 1350px) {
   .main {
     padding-top: calc(20px + (55 - 20) * (100vw - 320px) / (1350 - 320));
     padding-bottom: calc(90px + (145 - 90) * (100vw - 320px) / (1350 - 320));
   }
-
 }
 
-@media(max-width: 1100px) {
-
+@media (max-width: 1100px) {
   .main {
-
     &__benefits p {
       font-size: calc(14px + (16 - 14) * (100vw - 320px) / (1100 - 320));
     }
@@ -117,34 +110,23 @@
     &__title-row {
       margin-bottom: calc(37px + (156 - 37) * (100vw - 320px) / (1100 - 320));
     }
-
-
-
   }
-
-
 }
 
-@media(max-width: 770px) {
-
+@media (max-width: 770px) {
   .main {
-
     &__benefit-container {
       align-items: flex-start;
     }
-
   }
-
 }
 
-@media(max-width: 500px) {
-
+@media (max-width: 500px) {
   .play-btn {
     display: none;
   }
 
   .main {
-
     &__benefit-container {
       align-items: center;
     }
@@ -163,7 +145,5 @@
         height: 70px;
       }
     }
-
   }
 }
-

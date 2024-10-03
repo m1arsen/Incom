@@ -6,7 +6,7 @@
     position: relative;
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
@@ -16,11 +16,10 @@
       background: url('./../../img/benefits/design-element.svg') center no-repeat;
       background-size: cover;
       transform: translate(50%, -20%);
-
-      }
+    }
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0;
       left: 0;
@@ -30,11 +29,8 @@
       background: url('./../../img/benefits/design-element.svg') center no-repeat;
       background-size: cover;
       transform: translate(-50%, 45%);
-
-      }
+    }
   }
-
-
 
   &__heading {
     max-width: 694px;
@@ -58,24 +54,21 @@
       margin-bottom: 0;
     }
 
-    &_even .card__info{
+    &_even .card__info {
       order: 1;
     }
 
-    &_even .card__num{
+    &_even .card__num {
       max-width: 542px;
       margin-left: 58%;
     }
   }
 }
 
-@media(max-width: 1260px) {
-
+@media (max-width: 1260px) {
   .benefits {
-
-    padding:  calc(40px + (80 - 40) * (100vw - 320px) / (1260 - 320))
-              0
-              calc(60px + (120 - 60) * (100vw - 320px) / (1260 - 320));
+    padding: calc(40px + (80 - 40) * (100vw - 320px) / (1260 - 320)) 0
+      calc(60px + (120 - 60) * (100vw - 320px) / (1260 - 320));
 
     &__heading {
       font-size: calc(20px + (36 - 20) * (100vw - 320px) / (1260 - 320));
@@ -83,13 +76,10 @@
     }
 
     &-card {
-      &_even .card__num{
+      &_even .card__num {
         margin: 0 auto;
-        max-width: 649px
+        max-width: 649px;
       }
     }
-
   }
-
 }
-

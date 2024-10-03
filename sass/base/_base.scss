@@ -22,14 +22,13 @@ body {
 .play-btn {
   padding: 20px 18px 20px 22px;
   border-radius: 50%;
-  background-color: rgba($accent-color, .7);
-  box-shadow: 0px 0px 50px #CFA55B;
+  background-color: rgba($accent-color, 0.7);
+  box-shadow: 0px 0px 50px #cfa55b;
   position: relative;
-  transition: all .2s ease-in;
-
+  transition: all 0.2s ease-in;
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     top: -15px;
     left: -15px;
@@ -37,7 +36,7 @@ body {
     height: 93px;
     border: 2px solid $accent-color;
     border-radius: 50%;
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
   }
 
   &:hover.play-btn {
@@ -45,7 +44,7 @@ body {
     background-color: $accent-color-hover;
   }
   &:hover.play-btn:after {
-    transform: scale(.8);
+    transform: scale(0.8);
     opacity: 0;
     border-color: $accent-color-hover;
   }
@@ -55,7 +54,7 @@ body {
   padding: 30px 66px;
   font-size: 18px;
   line-height: 1;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 900;
 
   background-color: $accent-color;
@@ -64,7 +63,7 @@ body {
   display: inline-block;
   max-width: 420px;
 
-  transition: background-color .2s ease-in;
+  transition: background-color 0.2s ease-in;
 
   &:hover {
     background-color: #e0b262;
@@ -80,22 +79,18 @@ body {
   display: none;
 }
 
-@media(max-width: 500px) {
-
+@media (max-width: 500px) {
   .card__info .btn {
-    padding:  calc(20px + (30 - 20) * (100vw - 320px) / (500 - 320))
-              calc(33px + (66 - 33) * (100vw - 320px) / (500 - 320));
+    padding: calc(20px + (30 - 20) * (100vw - 320px) / (500 - 320))
+      calc(33px + (66 - 33) * (100vw - 320px) / (500 - 320));
     font-size: calc(14px + (18 - 14) * (100vw - 320px) / (500 - 320));
     max-width: calc(290px + (420 - 290) * (100vw - 320px) / (500 - 320));
     margin: 0 auto;
   }
-
 }
 
-@media(max-width: 550px) {
-
+@media (max-width: 550px) {
   .form-btn {
     font-size: 14px;
   }
-
 }

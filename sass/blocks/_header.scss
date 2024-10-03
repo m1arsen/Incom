@@ -20,7 +20,7 @@
     font-size: 24px;
     font-weight: 700;
     color: #fff;
-    transition: color .2s ease-in;
+    transition: color 0.2s ease-in;
 
     &:hover {
       color: $accent-color-hover;
@@ -33,8 +33,8 @@
     border: 2px solid $accent-color;
     border-radius: 5px;
     background: none;
-    filter: drop-shadow(0px 0px 30px #FFC256);
-    transition: background-color .2s ease-in, color .2s ease-in, border-color .2s ease-in;
+    filter: drop-shadow(0px 0px 30px #ffc256);
+    transition: background-color 0.2s ease-in, color 0.2s ease-in, border-color 0.2s ease-in;
 
     font-size: 14px;
     color: $accent-color;
@@ -42,15 +42,14 @@
     font-weight: 700;
 
     &:hover {
-      background-color: rgba($accent-color, .2);
+      background-color: rgba($accent-color, 0.2);
       color: $accent-color-hover;
       border-color: $accent-color-hover;
     }
   }
 }
 
-@media(max-width: 1100px) {
-
+@media (max-width: 1100px) {
   .header {
     margin-bottom: calc(50px + (180 - 50) * (100vw - 320px) / (1100 - 320));
 
@@ -65,15 +64,11 @@
     &__btn {
       padding: 15px 20px;
     }
-
   }
-
 }
 
-@media(max-width: 770px) {
-
+@media (max-width: 770px) {
   .header {
-
     &__number {
       display: none;
     }
@@ -82,15 +77,12 @@
       padding: 10px 15px;
     }
   }
-
 }
 
-@media(max-width: 500px) {
-
+@media (max-width: 500px) {
   .header {
     &__btn {
       display: none;
     }
   }
-
 }

@@ -6,7 +6,7 @@
   right: 0;
   left: 0;
 
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
   opacity: 0;
 
   background-color: #fff;
@@ -45,7 +45,7 @@
     font-size: 24px;
     font-weight: 700;
     color: $black;
-    transition: color .2s ease-in;
+    transition: color 0.2s ease-in;
 
     &:hover {
       color: $accent-color-hover;
@@ -58,7 +58,7 @@
     border: 2px solid $accent-color;
     border-radius: 5px;
     background: none;
-    transition: background-color .2s ease-in, color .2s ease-in, border-color .2s ease-in;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in, border-color 0.2s ease-in;
 
     font-size: 14px;
     color: $accent-color;
@@ -73,7 +73,6 @@
   }
 
   &__nav {
-
   }
 }
 
@@ -93,7 +92,7 @@
       line-height: 0.8;
 
       a {
-        transition: color .2s ease-in;
+        transition: color 0.2s ease-in;
         &:hover {
           color: $accent-color;
         }
@@ -102,17 +101,15 @@
   }
 }
 
-@media(max-width: 1350px) {
+@media (max-width: 1350px) {
   .menu {
     padding-top: calc(20px + (55 - 20) * (100vw - 320px) / (1350 - 320));
     padding-bottom: calc(20px + (55 - 20) * (100vw - 320px) / (1350 - 320));
   }
 }
 
-@media(max-width: 1100px) {
-
+@media (max-width: 1100px) {
   .menu {
-
     &__slogan {
       display: none;
     }
@@ -124,13 +121,12 @@
     &__btn {
       padding: 15px 20px;
     }
-
   }
 
   .links-container {
-    padding:  calc(50px + (200 - 50) * (100vw - 320px) / (1100 - 320))
-              calc(0px + (50 - 0) * (100vw - 320px) / (1100 - 320))
-              calc(70px + (250 - 70) * (100vw - 320px) / (1100 - 320));
+    padding: calc(50px + (200 - 50) * (100vw - 320px) / (1100 - 320))
+      calc(0px + (50 - 0) * (100vw - 320px) / (1100 - 320))
+      calc(70px + (250 - 70) * (100vw - 320px) / (1100 - 320));
 
     & ul {
       row-gap: calc(10px + (30 - 10) * (100vw - 320px) / (1100 - 320));
@@ -139,16 +135,11 @@
         font-size: calc(18px + (32 - 18) * (100vw - 320px) / (1100 - 320));
       }
     }
-
-
   }
-
 }
 
-@media(max-width: 770px) {
-
+@media (max-width: 770px) {
   .menu {
-
     &__number {
       display: none;
     }
@@ -165,18 +156,12 @@
       width: 100%;
     }
   }
-
 }
 
-@media(max-width: 500px) {
-
+@media (max-width: 500px) {
   .menu {
-
     &__btn {
       display: none;
     }
-
   }
-
 }
-

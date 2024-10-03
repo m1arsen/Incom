@@ -3,8 +3,6 @@
   background: url('./../img/information/info-bg.jpg') center no-repeat;
   background-size: cover;
 
-
-
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -15,12 +13,9 @@
   &__heading {
     max-width: 638px;
 
-
-
     p:first-of-type {
       margin-bottom: 29px;
     }
-
   }
   &__title {
     margin-bottom: 53px;
@@ -33,13 +28,10 @@
     span {
       color: $accent-color;
     }
-
   }
   &__card {
     max-width: 447px;
     color: $black;
-
-
 
     &-btn {
       padding: 25px 0;
@@ -54,7 +46,6 @@
     border-radius: 10px;
 
     position: relative;
-
 
     // &:after {
     //   content: "";
@@ -109,10 +100,8 @@
   }
 }
 
-@media(max-width: 1100px) {
-
+@media (max-width: 1100px) {
   .information {
-
     padding: calc(40px + (80 - 40) * (100vw - 320px) / (1260 - 320)) 0;
 
     &__title {
@@ -121,13 +110,13 @@
     }
 
     &__heading {
-      & p, p:first-of-type {
+      & p,
+      p:first-of-type {
         margin-bottom: calc(10px + (29 - 10) * (100vw - 320px) / (1100 - 320));
       }
     }
 
     &__card {
-
       &-title {
         font-size: calc(18px + (24 - 18) * (100vw - 320px) / (1100 - 320));
         margin-bottom: calc(10px + (23 - 10) * (100vw - 320px) / (1100 - 320));
@@ -138,11 +127,10 @@
       }
 
       &-front {
-        padding:  calc(28px + (36 - 28) * (100vw - 320px) / (1100 - 320))
-                  calc(21px + (34 - 21) * (100vw - 320px) / (1100 - 320))
-                  calc(27px + (43 - 27) * (100vw - 320px) / (1100 - 320));
+        padding: calc(28px + (36 - 28) * (100vw - 320px) / (1100 - 320))
+          calc(21px + (34 - 21) * (100vw - 320px) / (1100 - 320))
+          calc(27px + (43 - 27) * (100vw - 320px) / (1100 - 320));
       }
-
     }
 
     &__benefits li {
@@ -153,5 +141,4 @@
       }
     }
   }
-
 }

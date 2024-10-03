@@ -1,5 +1,4 @@
 .logo {
-
   h1 {
     font-size: 51px;
     line-height: 1;
@@ -10,13 +9,11 @@
     font-size: 27px;
     line-height: 1;
     color: $accent-color;
-    transition: color .2s ease-in;
-
+    transition: color 0.2s ease-in;
   }
 }
 
-@media(max-width: 1100px) {
-
+@media (max-width: 1100px) {
   .logo h1 {
     font-size: calc(24px + (51 - 24) * (100vw - 320px) / (1100 - 320));
   }

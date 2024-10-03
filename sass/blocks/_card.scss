@@ -1,5 +1,4 @@
 .card {
-
   &__num {
     margin-bottom: 24px;
 
@@ -9,7 +8,7 @@
     font-size: 96px;
     line-height: 1;
     text-transform: uppercase;
-    opacity: .3;
+    opacity: 0.3;
 
     max-width: 649px;
   }
@@ -20,8 +19,6 @@
     flex-wrap: wrap;
     column-gap: 30px;
   }
-
-
 
   &__info {
     color: $black;
@@ -50,7 +47,6 @@
     p {
       max-width: 360px;
     }
-
   }
 
   &__img {
@@ -59,18 +55,15 @@
       width: 100%;
       border-radius: 10px;
       box-shadow: 0px 5px 50px rgba(60, 60, 60, 0.4);
-
     }
   }
 }
 
-@media(max-width: 1260px) {
-
+@media (max-width: 1260px) {
   .card {
-
     &__container {
       flex-direction: column;
-      row-gap: 30px ;
+      row-gap: 30px;
       align-items: center;
     }
 
@@ -88,5 +81,4 @@
       font-size: calc(20px + (30 - 20) * (100vw - 320px) / (1100 - 320));
     }
   }
-
 }

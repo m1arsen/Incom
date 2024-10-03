@@ -15,7 +15,7 @@
     line-height: 1.2;
     font-weight: 700;
 
-    transition: color .2s ease-in;
+    transition: color 0.2s ease-in;
 
     &:hover {
       color: $accent-color;
@@ -23,27 +23,21 @@
   }
 }
 
-@media(max-width: 1100px) {
-
+@media (max-width: 1100px) {
   .footer {
     padding: calc(20px + (50 - 20) * (100vw - 320px) / (1100 - 320));
 
     &__tel {
       font-size: calc(18px + (24 - 18) * (100vw - 320px) / (1100 - 320));
     }
-
   }
-
 }
 
-@media(max-width: 550px) {
-
+@media (max-width: 550px) {
   .footer {
     &__container {
       justify-content: center;
       row-gap: 20px;
     }
-
   }
-
 }

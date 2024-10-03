@@ -39,7 +39,7 @@
 
     border: 2px solid $accent-color;
     border-radius: 5px;
-    transition: .2s ease-in;
+    transition: 0.2s ease-in;
 
     &:hover {
       color: #fff;
@@ -51,18 +51,15 @@
       background-color: $accent-color;
       box-shadow: 0px 20px 40px rgba(207, 165, 91, 0.4);
     }
-
   }
 
   &__slider {
-
     &-tab {
       display: none;
 
       &.active {
         display: block;
       }
-
     }
   }
   &__card {
@@ -95,7 +92,6 @@
       font-weight: 700;
       line-height: 1.375;
     }
-
   }
   &__card-info {
     display: flex;
@@ -104,7 +100,6 @@
     column-gap: 100px;
   }
   &__card-info-item {
-
     h3 {
       font-size: 30px;
       line-height: 1.2;
@@ -119,12 +114,9 @@
       color: #8c8c8c;
     }
   }
-
 }
 
-
 .swiper-button {
-
   &-prev:after {
     color: $accent-color;
     font-weight: 900;
@@ -134,28 +126,20 @@
     color: $accent-color;
     font-weight: 900;
   }
-
 }
 
-@media(max-width: 1200px) {
-
+@media (max-width: 1200px) {
   .catalog {
-
     &__btn {
       font-size: 14px;
       padding: 20px 25px;
     }
-
   }
-
 }
 
-@media(max-width: 1100px) {
-
+@media (max-width: 1100px) {
   .catalog {
-
     padding: calc(40px + (80 - 40) * (100vw - 320px) / (1100 - 320)) 0;
-
 
     &__title {
       font-size: calc(20px + (36 - 20) * (100vw - 320px) / (1100 - 320));
@@ -166,15 +150,11 @@
       flex-wrap: wrap;
       column-gap: 10px;
     }
-
   }
-
 }
 
-@media(max-width: 870px) {
-
+@media (max-width: 870px) {
   .catalog {
-
     &__heading {
       margin-bottom: 30px;
       flex-direction: column;
@@ -188,23 +168,17 @@
     }
 
     &__card {
-
       &-info {
         column-gap: calc(30px + (100 - 30) * (100vw - 550px) / (870 - 550));
       }
-
     }
-
   }
-
 }
 
-@media(max-width: 550px) {
-
+@media (max-width: 550px) {
   .catalog {
-
     &__btn {
-      padding:  calc(15px + (20 - 15) * (100vw - 320px) / (550 - 320)) 25px;
+      padding: calc(15px + (20 - 15) * (100vw - 320px) / (550 - 320)) 25px;
     }
 
     &__card {
@@ -222,14 +196,12 @@
         }
       }
 
-
       &-info {
         flex-wrap: wrap;
         row-gap: calc(15px + (30 - 15) * (100vw - 320px) / (550 - 320));
         column-gap: 30px;
 
         &-item {
-
           & h3 {
             font-size: calc(20px + (30 - 20) * (100vw - 320px) / (550 - 320));
           }
@@ -240,12 +212,10 @@
         }
       }
     }
-
   }
 
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
   }
-
 }
